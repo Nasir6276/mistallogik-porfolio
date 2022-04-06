@@ -1,0 +1,120 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Space Grotesk', sans-serif;
+    overflow: hidden;
+}
+
+
+
+#wrapper {
+    display: flex;
+    flex-direction: row;
+    margin: 0px 100px 0px 100px;
+}
+
+#left {
+    display: flex;
+    flex: 1.5;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    position: relative;
+}
+
+#right {
+    flex: 1;
+}
+
+
+
+.mistallogik {
+    max-width: 100vh;
+}
+
+.header-links a {
+    text-decoration: underline;
+    color: white;
+    font-size: large;
+    margin-right: 20px;
+}
+
+.header-content {
+    line-height: 1.5rem;
+}
+
+.page-content {
+    width: 80%;
+    /* height: 80%; */
+    /* padding-bottom: 1rem; */
+    /* padding-left: 10rem; */
+    /* position: relative; */
+    line-height: 30px;
+}
+.page-content h1 {
+    font-size: 40px;
+}
+
+.page-content h3 {
+    font-size: 20px;
+    font-weight: normal ;
+    margin-top: 1rem;
+}
+
+.page-content h1 {
+    margin-bottom: 0%;
+}
+
+.social-icons a {
+    text-decoration: none;
+    font-size: larger;
+    text-align: center;
+    align-items: center;
+}
+
+.social-icons button {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    border: 2px solid;
+    margin-right: 8px;
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+}
+
+@media (max-width: 668px) {
+    body {
+        overflow: auto;
+    }
+
+    #wrapper {
+        margin: 0px;
+    }
+
+    #right {
+        display: none;
+    }
+
+    #left {
+        justify-content: start;
+        margin-top: 4vh;
+    }
+
+    .page-content h1 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 780px) {
+    body {
+        overflow: hidden;
+    }
+
+    #wrapper {
+        display: flex;
+        flex-direction: row;
+        margin: 100px 100px 100px 100px;
+    }
+}
